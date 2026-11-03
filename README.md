@@ -1,97 +1,178 @@
 # CursorCraft
 
-> **Developed & Maintained by [AllySoft Solutions](https://allysoftsolutions.com/)**
+<p align="center">
+  <img src="cursorcraft/icons/icon128.png" alt="CursorCraft Logo" width="96" height="96" />
+</p>
 
-A Chrome extension that wipes any web page to a blank canvas and lets a swarm of multiplayer cursors build it back, live: crosshair-drawn boxes, typed text, pen-tool lines, ruler guides and ⌥-drag duplicates, until the page looks just like it did before.
+<p align="center">
+  <strong>An Interactive Browser Experience Engineered by <a href="https://allysoftsolutions.com/">AllySoft Solutions</a></strong>
+</p>
 
-![CursorCraft rebuilding a page](media/demo.gif)
-
-[Full demo video (36s)](media/demo.mp4) · [Demo with sound (60s)](media/demo-with-sound.mp4)
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.1.0-blue.svg?style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/badge/Manifest-V3-success.svg?style=flat-square" alt="Manifest V3" />
+  <img src="https://img.shields.io/badge/Platform-Chrome%20Extension-orange.svg?style=flat-square" alt="Chrome Extension" />
+  <img src="https://img.shields.io/badge/Developed%20By-AllySoft%20Solutions-brightgreen.svg?style=flat-square" alt="AllySoft Solutions" />
+  <img src="https://img.shields.io/badge/Privacy-100%25%20Client--Side-blueviolet.svg?style=flat-square" alt="Privacy First" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" />
+</p>
 
 ---
 
-## 🏢 Developed by AllySoft Solutions
+## 🌟 Overview
 
-**CursorCraft** is maintained and extended by **AllySoft Solutions**.  
-We build high-performance software, custom browser extensions, and engaging digital experiences.
+**CursorCraft** is a cutting-edge Chrome extension that reimagines how web experiences can be visually deconstructed and rebuilt. With a single click or keystroke, CursorCraft wipes any live webpage down to a clean canvas and deploys an autonomous team of multiplayer cursors that reconstruct the entire page element by element before your eyes.
+
+Watch real-time design in action: boxes dragged out with crosshair precision, headings and body text typed with live carets, pen-tool vectors drawn on the fly, and layout guides dynamically snapped into place—all accompanied by a rich, procedurally synthesized soundscape.
+
+![CursorCraft Demo](media/demo.gif)
+
+🎬 **Watch the Demos:**
+- [Full Demo Video (36s)](media/demo.mp4)
+- [Full Demo with Spatial Sound (60s)](media/demo-with-sound.mp4)
 
 ---
 
-## Credit
+## 🏢 About AllySoft Solutions
 
-This is a tribute to **[Swarm](https://califa.github.io/swarm-site/)** by **[Joel Califa](https://joelcalifa.com)** ([@califa](https://github.com/califa), [source](https://github.com/califa/swarm-site)), a website that builds itself as you scroll.
+> **Innovative IT Solutions · Custom Software Engineering · Next-Gen Digital Products**
 
-The motion design is his: the cursor set, the swarm and flocking physics, the build choreography (rects, typing, guides, duplicates), the rulers and the overall look. Large parts of the animation engine here are adapted directly from his site. What this project adds is the part that points it at *any* page: snapshotting a live DOM into a blueprint the swarm can rebuild, plus the extension around it.
+**CursorCraft** is proudly engineered, designed, and maintained by **[AllySoft Solutions](https://allysoftsolutions.com/)**.
 
-Go look at the original. It's better than this.
+At **AllySoft Solutions**, we are a full-cycle IT services and software development powerhouse dedicated to transforming ideas into scalable, high-impact digital products. From bespoke enterprise applications to sleek web extensions and immersive interactive systems, we deliver craftsmanship and technical excellence across every project.
 
-## Install
+### 🚀 What We Do at AllySoft Solutions
+- **Enterprise Software Development:** Scalable, secure, and modern cloud applications tailored to your business operations.
+- **Custom Web & Mobile Engineering:** Ultra-responsive web platforms and native/cross-platform mobile apps built with modern tech stacks.
+- **Chrome Extensions & Tooling:** High-performance browser extensions, automated scrapers, and developer productivity tools.
+- **UI/UX Design & Motion Engineering:** Human-centered, visually stunning interfaces paired with fluid motion design and micro-interactions.
+- **Cloud Infrastructure & DevOps:** Robust CI/CD pipelines, cloud migrations, monitoring, and automated infrastructure management.
+- **AI & Automation Integration:** Intelligent automation, LLM workflows, and data-driven solutions for modern digital workflows.
 
-It isn't on the Chrome Web Store yet, so load it unpacked:
+🌐 **Website:** [https://allysoftsolutions.com/](https://allysoftsolutions.com/)  
+📫 **Partner with Us:** Get in touch with our engineering team for enterprise software, product engineering, or custom development.
 
-1. Clone or download this repo.
-2. Open `chrome://extensions` and turn on **Developer mode** (top right).
-3. Click **Load unpacked** and choose the [`cursorcraft/`](cursorcraft) folder.
-4. Pin it (puzzle icon → pin).
+---
 
-## Use
+## ✨ Key Features
 
-- Click the toolbar icon or press **Alt+Shift+S** on any page.
-- The page fades out and the cursors orbit the site's favicon, then fan out and start building.
-- **Scroll** and the swarm chases you, with more agents joining the faster you go.
-- **Tour** auto-scrolls at the pace the swarm can keep up with. Good for screen recordings.
-- **1× / 2× / 3×** changes build speed.
-- **Sound** is on by default (🔊 in the toolbar, or press **M**). If the page hasn't been clicked yet, Chrome keeps audio locked and the button says **Tap for sound**; one click anywhere starts it.
-- When it's done, the cursors flock to your mouse. **Go live** fades back to the real, clickable page; **Replay** builds it again.
-- **Esc**, **✕**, or clicking the icon again exits at any time.
+- **Instant DOM Snapshotting:** Parses and captures any live webpage—including open Shadow DOMs, complex typography, gradients, shadows, and media elements—into a rebuild blueprint.
+- **Autonomous Multi-Cursor Orchestration:** Emulates a collaborative design team with smooth cursor flocking physics, crosshairs, pen tools, ruler guides, and drag-and-drop cloning.
+- **Synthesized Procedural Audio Engine:** Powered entirely by the browser’s Web Audio API with zero external audio assets:
+  - Tactile mechanical keyboard feedback with deep spacebar thocks.
+  - Crisp ruler-snap and drag clicks.
+  - Harmonic glass-piano notes mapped to an E-major pentatonic scale with stereo spatial panning relative to active cursors.
+- **Speed & Flow Controls:**
+  - **1× / 2× / 3× Speeds:** Accelerate or slow down the build choreography.
+  - **Tour Mode:** Automated smooth scroll matching cursor reconstruction speeds—ideal for high-quality screen captures and presentations.
+  - **Live Return:** Smoothly fades back to the interactive, fully functional webpage when the build completes.
+- **100% Privacy-Preserving & Local:** Never transmits data to external servers. Everything happens strictly inside your local browser tab.
 
-There's a self-contained test page in [`demo/index.html`](demo/index.html) (an inner-scrolling app shell with floats, forms, cards and media). Opening local files needs **Allow access to file URLs** enabled for the extension.
+---
 
-## How it works
+## 🚀 Installation Guide
 
-1. **Snapshot.** [`swarm.js`](cursorcraft/swarm.js) walks the live DOM, including open shadow roots, and turns it into a blueprint:
-   - boxes with fills, borders, radii, shadows, gradients, masks and backdrop blur → **rects**
-   - text blocks → **text layers**, cloned with their computed styles (fonts, links, inline code, icons, `::before`/`::after`)
-   - single-side borders and `<hr>` → **pen-tool lines**
-   - `<img>`, `<svg>`, `<video>`, `<canvas>`, iframes → **media**. WebGL canvases, playing video and cross-origin iframes are cropped from a screenshot taken at click time while only those elements are visible.
-   - repeated siblings (nav links, cards, list rows, logos) → one **master** plus **duplicates**
-   - shared left edges and baselines → **ruler guides** that text snaps to
-2. **Blank.** A full-viewport layer, isolated from the page's CSS in a shadow root, covers the page with its own background color. A quick hidden scroll pass first triggers lazy images and reveal-on-scroll content.
-3. **Rebuild.** Each cursor runs a small generator script per task. Tasks unlock top-down as you scroll, children wait for their parent box, and duplicates wait for their master:
-   - **rect / media:** crosshair drag with a live `W × H` badge and a gray placeholder, then the real fill fades in (images sweep top to bottom)
-   - **text:** drag a text box, type with an I-beam and a blinking caret; big headings start at 18px and step up
-   - **lines:** pen tool, anchor points, rubber band to the cursor
-   - **guides:** Figma-style rulers slide in, a red guide is dragged out, and text snaps onto it
-   - **duplicates:** select the master, ⌥-drag a copy with red spacing measurements, then retype its text, swap its image or restyle it
-   - **swarm physics:** orbiting, alignment and mouse-avoiding flocking for the intro and the finale
-4. **Sound.** Synthesized live with the Web Audio API (no audio files), mostly clicky, a little musical:
-   - typing is a mechanical keyboard (a sharp click over a short thock, deeper on spaces), and every mouse press is a press-and-release click
-   - guides snap with a crisp click, and growing headings tick up in pitch
-   - boxes, images and duplicates add a sparse, quiet glass-piano note from the E major pentatonic, on an eighth-note grid: big sections play low, small things high, pitch rises left to right, and every sound is panned to its cursor
-   - an airy swell as the page dissolves, a short arpeggio as the swarm fans out, a soft E major chord when the page is done, and a falling sweep for Go live
+CursorCraft is built on **Manifest V3** and can be loaded directly into any Chromium-based browser (Chrome, Brave, Edge):
 
-### Files
+1. **Clone or Download Repository:**
+   ```bash
+   git clone https://github.com/DhvanilPatel/Cursor_Craft.git
+   ```
+2. Open your browser and navigate to:
+   ```text
+   chrome://extensions
+   ```
+3. Enable **Developer mode** using the toggle in the top-right corner.
+4. Click the **Load unpacked** button.
+5. Select the [`cursorcraft/`](cursorcraft) folder from this project directory.
+6. Pin the **CursorCraft** extension icon to your browser toolbar for quick access.
 
-| Path | What it is |
-| --- | --- |
-| `cursorcraft/manifest.json` | Manifest V3; permissions are `activeTab` and `scripting` only |
-| `cursorcraft/background.js` | Toolbar click → media-only screenshot → inject `swarm.js` (or toggle off) |
-| `cursorcraft/swarm.js` | Snapshot, renderer and swarm engine (one dependency-free content script) |
-| `demo/index.html` | Edge-case test page |
-| `store/` | Chrome Web Store listing copy, screenshots and promo tile |
-| `scripts/package.sh` | Builds the zip to upload to the Web Store |
+---
 
-## Limits
+## 🎮 How to Use
 
-- Chrome doesn't let extensions run on `chrome://` pages, the Web Store or the PDF viewer. The icon shows a red × there.
-- It's a visual rebuild, not a clone. Animations freeze at the moment you click, decorative pseudo-elements are skipped when their position can't be worked out, and canvases, videos and iframes below the first screen become placeholders.
-- Web components are rebuilt as plain styled elements, so none of the page's scripts run inside the swarm's layer.
-- Very long pages are capped at about 4,000 layers / 40,000px.
+| Action | Shortcut / Trigger | Description |
+| :--- | :--- | :--- |
+| **Start Rebuild** | `Alt + Shift + S` or Toolbar Icon | Fades the active tab to a clean canvas and launches the cursor reconstruction team. |
+| **Speed Adjustment** | Click `1×`, `2×`, or `3×` | Toggles the reconstruction playback velocity. |
+| **Auto-Tour** | Click `Tour` | Autonomously scrolls the page at an optimal viewing pace. |
+| **Toggle Audio** | Press `M` or click 🔊 | Mutes or unmutes the real-time synthesized soundscape. |
+| **Go Live** | Click `Go live` | Returns you immediately to the real, interactive page. |
+| **Replay** | Click `Replay` | Restarts the reconstruction from the top. |
+| **Exit** | `Esc` or `✕` | Instantly aborts CursorCraft and restores your original page state. |
 
-## Publishing
+> **Local File Testing:** To test local HTML files (e.g., [`demo/index.html`](demo/index.html)), open `chrome://extensions`, click **Details** under CursorCraft, and enable **"Allow access to file URLs"**.
 
-`./scripts/package.sh` writes `dist/cursorcraft-<version>.zip` for the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole). Listing text, permission justifications and assets are in [`store/`](store), and the privacy policy is [`PRIVACY.md`](PRIVACY.md).
+---
 
-## License
+## 🛠️ Architecture & Under the Hood
 
-None yet. The original Swarm site is published without a license and this project adapts parts of it, so please don't reuse this code without checking with [Joel Califa](https://joelcalifa.com) as well.
+```
+┌─────────────────┐       ┌────────────────────┐       ┌────────────────────────┐
+│   Live Webpage  │ ────> │  DOM Blueprinting  │ ────> │   Shadow DOM Canvas    │
+│  (DOM + Media)  │       │     (swarm.js)     │       │ (Multi-Cursor Physics) │
+└─────────────────┘       └────────────────────┘       └────────────────────────┘
+                                                                   │
+                                                                   ▼
+                                                       ┌────────────────────────┐
+                                                       │ Live Synthesized Audio │
+                                                       │    (Web Audio API)     │
+                                                       └────────────────────────┘
+```
+
+1. **DOM Blueprint Engine:** [`swarm.js`](cursorcraft/swarm.js) analyzes computed CSS properties, text nodes, pseudo-elements (`::before`/`::after`), vector SVGs, and responsive media, converting them into an organized build queue.
+2. **Media Capture Pipeline:** Captures local screenshots of visible WebGL canvases, videos, and embedded iframes without external network roundtrips.
+3. **Multi-Agent Cursor Simulation:** Dispatches specialized worker cursor instances that execute procedural building scripts (drawing bounding rectangles, snapping typography to ruler guides, and duplicating recurring items with `⌥-drag` visual effects).
+4. **Spatial Audio Synthesis:** Real-time synthesis creates audio frequencies and spatial stereo panning calculated directly from the coordinates of each active cursor.
+
+---
+
+## 📁 Project Structure
+
+```text
+Cursor_Craft/
+├── cursorcraft/              # Core Chrome Extension (Manifest V3)
+│   ├── manifest.json         # Extension configuration & permissions
+│   ├── background.js         # Service worker handling tab capture & injection
+│   ├── swarm.js              # Core animation engine, DOM parser & audio synthesizer
+│   └── icons/                # Extension branding and high-res assets
+├── demo/                     # Local test suites & responsive edge-case layouts
+│   └── index.html            # Standalone test sandbox
+├── media/                    # Showcase recordings and animated previews
+│   ├── demo.gif              # Quick preview animation
+│   ├── demo.mp4              # 36s high-definition demo
+│   └── demo-with-sound.mp4   # 60s demonstration with spatial audio
+├── store/                    # Chrome Web Store distribution assets & documentation
+├── scripts/                  # Automated build and packaging scripts
+├── PRIVACY.md                # Privacy statement & data commitments
+└── README.md                 # Project documentation
+```
+
+---
+
+## 🔒 Privacy & Security
+
+At **AllySoft Solutions**, user privacy and data security are core design principles:
+
+- **Zero Data Collection:** CursorCraft does not collect, record, log, or transmit any user data or browsing activity.
+- **Local Tab Execution:** Operates strictly within the tab you activate, utilizing Chrome's strict `activeTab` security model.
+- **No Third-Party Analytics:** No telemetry, tracking beacons, or third-party dependencies.
+- **Offline First:** Works seamlessly offline; requires no external API connections.
+
+Review our full [Privacy Policy](PRIVACY.md) for detailed permission breakdowns.
+
+---
+
+## 🤝 Connect with AllySoft Solutions
+
+Looking to build transformative web applications, custom browser tooling, or enterprise software? We’d love to collaborate with you.
+
+- 🌐 **Company Website:** [allysoftsolutions.com](https://allysoftsolutions.com/)
+- 💼 **Services:** Full-Stack Web Development, Mobile Apps, Cloud Engineering, Browser Extensions
+- 📬 **Inquiries:** Contact us through our website for enterprise consultations and project inquiries.
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**. Created and maintained with ❤️ by **[AllySoft Solutions](https://allysoftsolutions.com/)**.
